@@ -17,6 +17,15 @@
     "noFallthroughCasesInSwitch": false,
     "skipLibCheck": true,
     "skipDefaultLibCheck": false,
-    "esModuleInterop": true
-  }
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "paths": {
+      "~/*": ["./typings/*"],
+      "@/*": ["./src/*"],
+      "#/*": ["./*"]
+    }
+  },
+  "exclude": ["design/**", "test/**"],
+  "include": ["src/**/*.ts", "*.*js", "*.*ts", "scripts/**.*", "typings/**/*.d.ts"]
 }
